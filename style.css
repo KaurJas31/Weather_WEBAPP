@@ -1,0 +1,223 @@
+/* *{
+    box-sizing: border-box;
+}
+
+ .container{
+    background-color: yellowgreen;
+} 
+ .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+     
+    
+     
+}
+
+
+.weather{
+    font-size: 30px;
+    color: green;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+
+}
+header i{
+    cursor:pointer;
+    margin-right: 20px;
+}
+input{
+    font-size: 25px;
+    margin:2px 1px 2px 1px;
+    border:solid black;
+    border-radius: 8px;
+    padding:4px;
+}
+button{
+    margin: 30px 2px 8px 2px;
+    font-size: 20px;
+    border:solid black;
+    padding:7px 5px 7px 5px;
+    border-radius: 8px;
+}
+ .dashed{
+    border-top: 3px dashed #bbb;
+     width:50%;
+     margin-top: 30px;
+}  */
+body{
+    background-color: rgb(178, 245, 245);
+    /* background:url(https://media.giphy.com/media/3oEdvbelTmMXOQ9VDO/giphy.gif); */
+    /* background: url(https://media.giphy.com/media/rRmBOCZDJJGU0/giphy.gif); */
+    /* background-size: cover; */
+    /* background-size:cover;
+    background-position: center; */
+    background:url(https://media.giphy.com/media/QRhtqYeEywJI4/giphy.gif);
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+.container{
+    background-color: white;
+    padding: 18px 8px 48px 8px;
+    border-radius: 8px;
+
+}
+.weather{
+    font-size: 35px;
+    color: rgb(137, 16, 230);
+    padding:12px;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma;
+    
+}
+ .weather i{
+    cursor:pointer;
+    margin-right: 20px;
+    font-size: 0px;
+    /* color:green; */
+}
+.container.active .weather i{
+        font-size: 29px;
+}
+/* .container:active .weather i{
+    font-size: 28px;
+    margin-left: 5px;
+    color:red;
+    background-color: pink;
+} */
+/*.loc{
+    display:none;
+} */
+.container.active .loc{
+    display:none;
+}
+ /* .loc:active{
+    display:none;
+} */
+.container.active .loc{
+    display: none;
+}
+.container.active .weather{
+    display: block;
+}
+input{
+    font-size: 25px;
+    margin-left: 15%;
+    border:grey; 
+    border-radius: 8px;
+    
+    padding:4px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    background-color: rgb(220, 247, 247);
+}
+.content input:is(:focus,:valid)
+{
+    border:2px solid black;
+    background-color: rgb(177, 242, 237);
+} 
+button{
+    margin: 30px 2px 8px 21%;
+    font-size: 20px;
+    border:solid black;
+    padding:7px 5px 7px 5px;
+    border-radius: 8px;
+    background-color:  rgb(117, 186, 238);
+    color: white;
+}
+/* .dash{
+    /* display:flex;
+     justify-content: center;
+    font-size: 8px; */
+     /* color:solid black;
+     width:100%;
+     height:2px;  */
+
+/* hr::before{
+    content: "or";
+    font-size: 8px;
+} */
+.dash{
+    height:1px;
+    display:flex;
+    /* width:100%; */
+    /* margin:25px 0px; */
+    /* background: #ccc; */
+    justify-content: center; 
+    align-items: center;
+}
+.dash::before{
+    content: "or";
+    font-size: 26px;
+    margin:25px 0px 25px 0px;
+
+}
+
+ .container .w{
+      display:none;
+      /* justify-content: center;
+      align-items: center; */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      /* 
+       */
+  }
+  .container.active .w{
+      display: block;
+
+  }
+  .temp{
+      font-size: 50px;
+      font-weight: 500;
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+  }
+   .deg{
+      margin:0px 2px 15px 5px;
+      font-size: 30px;
+  }
+  .hal{
+      font-size: 40px;
+      font-style: italic;
+      color: rgba(6, 66, 66, 0.598);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+  }
+
+  .location{
+      font-size: 30px;
+      font-weight: 500;
+      margin:35px 0px 20px 0px;
+      display:flex;
+      justify-content: center;
+  }
+  .location i{
+      color:red;
+      margin-right:12px;
+  }
+  .more{
+      /* background-color: pink; */
+      width: 100%;
+      font-size: 23px;
+      margin-top:25px;
+      color:rgb(10, 141, 106);
+      font-weight: 400;
+      display: flex;
+      /* align-items: flex-start; */
+      
+  }
+
